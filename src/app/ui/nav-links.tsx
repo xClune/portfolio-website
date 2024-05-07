@@ -19,7 +19,7 @@ const links = [
   { name: "Journey so far", href: "/journey-so-far", icon: GlobeAmericasIcon },
   { name: "Skills", href: "/skills", icon: CodeBracketSquareIcon },
   { name: "Education", href: "/education", icon: AcademicCapIcon },
-  { name: "Experience", href: "/education", icon: BriefcaseIcon },
+  { name: "Experience", href: "/experience", icon: BriefcaseIcon },
   { name: "Contact", href: "/contact", icon: DevicePhoneMobileIcon },
 ];
 
@@ -34,7 +34,7 @@ export default function NavLinks() {
             key={link.name}
             href={link.href}
             className={clsx(
-              `flex h-[48px] grow font-mono items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium text-slate-800 hover:bg-slate-100 hover:text-slate-600 md:flex-none md:justify-start md:p-2 md:px-3`,
+              `flex h-[48px] grow font-mono items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium text-slate-800 md:flex-none md:justify-start md:p-2 md:px-3 transition-transform ease-in-out duration-300 hover:bg-slate-300 hover:text-slate-600 hover:translate-x-5 hover:scale-110`,
               {
                 "bg-slate-100 text-slate-600": pathname === link.href,
               }
