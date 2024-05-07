@@ -2,7 +2,6 @@
 
 import { Canvas } from "@react-three/fiber";
 import { usePathname } from "next/navigation";
-import { use } from "react";
 
 export default function Main() {
   const pathname = usePathname();
@@ -21,7 +20,7 @@ export default function Main() {
   }
 
   if (pathname === "/journey-so-far") {
-    return <div className="w-full h-full">Journey</div>;
+    return <div className="w-full">Journey</div>;
   }
 
   if (pathname === "/skills") {

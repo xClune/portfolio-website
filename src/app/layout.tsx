@@ -22,7 +22,7 @@ export default function RootLayout({
         className={`${inter.className} flex flex-col md:flex-row w-screen h-screen`}
       >
         <SideNav />
-        <div className="flex flex-col w-full">
+        <div className="flex flex-col w-full h-full">
           <Header />
           {children}
         </div>
