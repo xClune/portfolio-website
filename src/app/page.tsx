@@ -1,5 +1,5 @@
-import Header from "@/app/ui/header";
-import Main from "@/app/ui/main";
+import Header from "@/components/header";
+import Main from "@/components/main";
 
 export default function page() {
   return <Main />;

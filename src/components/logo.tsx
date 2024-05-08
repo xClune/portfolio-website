@@ -1,4 +1,4 @@
-import { specialElite } from "@/app/ui/fonts";
+import { specialElite } from "../fonts";
 
 export default function Logo() {
   return (

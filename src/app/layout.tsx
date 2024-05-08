@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import SideNav from "@/app/ui/sidenav";
-import Header from "@/app/ui/header";
+import SideNav from "@/components/sidenav";
+import Header from "@/components/header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} flex flex-col md:flex-row w-screen h-screen`}
+        className={`${inter.className} flex flex-col pt-4 md:pt-0 md:flex-row w-screen h-screen`}
       >
         <SideNav />
         <div className="flex flex-col w-full h-full">

@@ -1,11 +1,11 @@
 import Link from "next/link";
-import NavLinks from "@/app/ui/nav-links";
+import NavLinks from "@/components/nav-links";
 import { PowerIcon } from "@heroicons/react/24/solid";
-import Logo from "@/app/ui/logo";
+import Logo from "@/components/logo";
 
 export default function SideNav() {
   return (
-    <div className="flex h-full flex-col px-3 md:px-5 md:py-5 ml-5">
+    <div className="flex h-full flex-col mx-2 px-2 md:px-5 md:py-5">
       <Link
         className="flex h-20 items-center justify-start rounded-md bg-slate-600 p-4 mb-5 md:h-40"
         href="/"
@@ -14,7 +14,7 @@ export default function SideNav() {
           <Logo />
         </div>
       </Link>
-      <div className="flex grow flex-row justify-between space-x-2 md:flex-col md:space-x-0 md:space-y-2">
+      <div className="flex grow flex-row md:justify-between space-x-2 md:flex-col md:space-x-0 md:space-y-2">
         <NavLinks />
         {/* <div className="hidden h-auto w-full grow rounded-md bg-gray-50 md:block"></div> */}
         <form>
