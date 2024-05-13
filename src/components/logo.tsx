@@ -1,4 +1,4 @@
-import { specialElite } from "../fonts";
+import { specialElite } from "../lib/fonts";
 
 export default function Logo() {
   return (

@@ -2,9 +2,9 @@
 
 import { Canvas } from "@react-three/fiber";
 import { usePathname } from "next/navigation";
-import splitStringRegex from "@/utils/splitStringRegex";
+import splitStringRegex from "@/lib/utils/splitStringRegex";
 import { motion, Variants } from "framer-motion";
-import { specialElite } from "@/fonts";
+import { specialElite } from "@/lib/fonts";
 
 const homeText =
   "Hey there! I am Adam. A former civil engineer turned avid life student and aspiring software developer. I am passionate about technology and the endless possibilities it brings. I am always looking to learn and grow, collaborate and explore, to capture all the opportunities that this life has to offer.";
