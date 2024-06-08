@@ -1,5 +1,5 @@
-import Main from "@/src/components/main";
+import Hero from "@/components/Hero";
 
 export default function page() {
-  return <Main />;
+  return <Hero />;
 }
