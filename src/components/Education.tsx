@@ -2,8 +2,8 @@ import React from "react";
 
 const Education = () => {
   return (
-    <div className="flex flex-col items-center h-svh [&>*]:text-center gap-y-5">
-      <h1 className="w-full">Education</h1>
+    <div className="flex flex-col items-center h-svh [&>*]:text-center gap-y-10">
+      <h1 className="w-full mt-10">Education</h1>
       <p className="">
         Bachelor of Engineering (Mechanical) and a Bachelor of Business
         (Economics) from Queensland University of Technology, graduating in

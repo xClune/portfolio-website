@@ -1,7 +1,7 @@
 import Link from "next/link";
 import NavLinks from "@/components/ui/NavLinks";
 import { PowerIcon } from "@heroicons/react/24/solid";
-import Logo from "@/components/Logo";
+import Logo from "../Logo";
 
 export default function SideNav() {
   return (

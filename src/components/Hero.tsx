@@ -1,8 +1,8 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import Header from "@/components/Header";
-import Main from "@/components/Main";
+import Header from "./Header";
+import Main from "./Main";
 import Skills from "./Skills";
 import Education from "./Education";
 
