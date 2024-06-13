@@ -4,9 +4,9 @@ import splitStringRegex from "@/lib/utils/splitStringRegex";
 import { motion, Variants } from "framer-motion";
 import { specialElite } from "@/lib/fonts";
 import Image from "next/image";
-import Engineer from "@/src/lib/img/engineer.png";
-import preMountain from "@/src/lib/img/premountain.png";
-import postMountain from "@/src/lib/img/postmountain.png";
+import Engineer from "@/../public/static/engineer.png";
+import preMountain from "@/../public/static/premountain.png";
+import postMountain from "@/../public/static/postmountain.png";
 import { ArrowRightCircleIcon } from "@heroicons/react/24/solid";
 
 const headingText = "Hey there! I'm Adam.";
