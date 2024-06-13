@@ -1,6 +1,5 @@
 "use client";
 
-import { usePathname } from "next/navigation";
 import splitStringRegex from "@/lib/utils/splitStringRegex";
 import { motion, Variants } from "framer-motion";
 import { specialElite } from "@/lib/fonts";
@@ -10,7 +9,7 @@ import preMountain from "@/src/lib/img/premountain.png";
 import postMountain from "@/src/lib/img/postmountain.png";
 import { ArrowRightCircleIcon } from "@heroicons/react/24/solid";
 
-const headingText = "Hey there! I am Adam.";
+const headingText = "Hey there! I'm Adam.";
 
 const bodyText =
   "A former civil engineer turned avid life student, world traveller and aspiring software developer. I am passionate about technology and the endless possibilities it brings. I am always looking to learn and grow, collaborate and explore, to capture all the opportunities that this life has to offer.";
@@ -45,7 +44,7 @@ export default function Main() {
       <motion.p
         initial="hidden"
         whileInView="visible"
-        transition={{ staggerChildren: 0.001 }}
+        transition={{ staggerChildren: 0.01 }}
         className={`w-full text-[20px] px-4 text-center md:pl-8 md:pr-16 md:text-right mb-5 ${specialElite.className}`}
       >
         {bodyChars.map((char, index) => (
@@ -58,7 +57,7 @@ export default function Main() {
           </motion.span>
         ))}
       </motion.p>
-      <div className="w-full flex flex-row justify-center items-center gap-20 py-5 pr-5 overflow-x-scroll">
+      <div className="w-full flex flex-row justify-center items-center gap-20 my-10 py-5 pr-5 overflow-x-scroll md:my-20">
         <Image
           src={Engineer}
           width={250}
