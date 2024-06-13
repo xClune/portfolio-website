@@ -4,9 +4,9 @@ import splitStringRegex from "@/lib/utils/splitStringRegex";
 import { motion, Variants } from "framer-motion";
 import { specialElite } from "@/lib/fonts";
 import Image from "next/image";
-import Engineer from "@/src/lib/img/engineer.png";
-import preMountain from "@/src/lib/img/premountain.png";
-import postMountain from "@/src/lib/img/postmountain.png";
+// import Engineer from "@/src/lib/img/engineer.png";
+// import preMountain from "@/src/lib/img/premountain.png";
+// import postMountain from "@/src/lib/img/postmountain.png";
 import { ArrowRightCircleIcon } from "@heroicons/react/24/solid";
 
 const headingText = "Hey there! I'm Adam.";
@@ -58,29 +58,29 @@ export default function Main() {
         ))}
       </motion.p>
       <div className="w-full flex flex-row justify-center items-center gap-20 my-10 py-5 pr-5 overflow-x-scroll md:my-20">
-        <Image
+        {/* <Image
           src={Engineer}
           width={250}
           height={250}
           alt="Civil Engineer Image"
           className="rounded-full"
-        ></Image>
+        ></Image> */}
         <ArrowRightCircleIcon className="w-10 h-10 fill-white"></ArrowRightCircleIcon>
-        <Image
+        {/* <Image
           src={preMountain}
           width={250}
           height={250}
           alt="Hiking Image"
           className="rounded-full"
-        ></Image>
+        ></Image> */}
         <ArrowRightCircleIcon className="w-10 h-10 fill-white"></ArrowRightCircleIcon>
-        <Image
+        {/* <Image
           src={postMountain}
           width={250}
           height={250}
           alt="Mountain Image"
           className="rounded-full"
-        ></Image>
+        ></Image> */}
       </div>
     </div>
   );
