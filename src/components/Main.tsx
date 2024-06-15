@@ -1,8 +1,7 @@
 "use client";
 
 import splitStringRegex from "@/lib/utils/splitStringRegex";
-import { motion, Variants } from "framer-motion";
-import { specialElite } from "@/lib/fonts";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Engineer from "@/../public/static/engineer.png";
 import preMountain from "@/../public/static/premountain.png";
@@ -23,13 +22,15 @@ export default function Main() {
   const headingChars = splitStringRegex(headingText);
   const bodyChars = splitStringRegex(bodyText);
 
+  let imgSize = 220;
+
   return (
     <div className="w-full h-svh flex-col items-center justify-center">
       <motion.p
         initial="hidden"
         whileInView="visible"
         transition={{ staggerChildren: 0.01 }}
-        className={`w-full text-[20px] px-4 text-center md:pl-8 md:pr-16 md:text-right mb-5 ${specialElite.className}`}
+        className={`w-full text-[20px] px-4 text-center md:pl-8 md:pr-16 md:text-right mb-5`}
       >
         {headingChars.map((char, index) => (
           <motion.span
@@ -45,7 +46,7 @@ export default function Main() {
         initial="hidden"
         whileInView="visible"
         transition={{ staggerChildren: 0.01 }}
-        className={`w-full text-[20px] px-4 text-center md:pl-8 md:pr-16 md:text-right mb-5 ${specialElite.className}`}
+        className={`w-full text-[20px] px-4 text-center md:pl-8 md:pr-16 md:text-right mb-5`}
       >
         {bodyChars.map((char, index) => (
           <motion.span
@@ -60,27 +61,32 @@ export default function Main() {
       <div className="w-full flex flex-row justify-center items-center gap-20 my-10 py-5 pr-5 overflow-x-scroll md:my-20">
         <Image
           src={Engineer}
-          width={250}
-          height={250}
+          width={imgSize}
+          height={imgSize}
           alt="Civil Engineer Image"
           className="rounded-full"
         ></Image>
         <ArrowRightCircleIcon className="w-10 h-10 fill-white"></ArrowRightCircleIcon>
         <Image
           src={preMountain}
-          width={250}
-          height={250}
+          width={imgSize}
+          height={imgSize}
           alt="Hiking Image"
           className="rounded-full"
         ></Image>
         <ArrowRightCircleIcon className="w-10 h-10 fill-white"></ArrowRightCircleIcon>
         <Image
           src={postMountain}
-          width={250}
-          height={250}
+          width={imgSize}
+          height={imgSize}
           alt="Mountain Image"
           className="rounded-full"
         ></Image>
+      </div>
+      <div className="w-full flex justify-end">
+        <p className="text-sm">
+          Website built by Adam Clune using Next.js Framework
+        </p>
       </div>
     </div>
   );

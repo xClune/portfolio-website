@@ -3,8 +3,6 @@
 import { usePathname } from "next/navigation";
 import Header from "./Header";
 import Main from "./Main";
-import Skills from "./Skills";
-import Education from "./Education";
 
 export default function Hero() {
   const pathname = usePathname();
@@ -16,25 +14,5 @@ export default function Hero() {
         <Main />
       </>
     );
-  }
-
-  if (pathname === "/journey-so-far") {
-    return <div className="w-full">Coming soon... </div>;
-  }
-
-  if (pathname === "/skills") {
-    return <Skills />;
-  }
-
-  if (pathname === "/education") {
-    return <Education />;
-  }
-
-  if (pathname === "/experience") {
-    return <div className="w-full h-full">Coming soon... </div>;
-  }
-
-  if (pathname === "/contact") {
-    return <div className="w-full h-full">Coming soon... </div>;
   }
 }
