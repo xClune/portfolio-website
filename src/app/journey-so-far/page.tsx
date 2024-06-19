@@ -1,5 +1,5 @@
 import Hero from "@/components/Hero";
 
 export default function page() {
-  return <Hero />;
+  return <h1>Coming Soon...</h1>;
 }

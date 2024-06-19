@@ -1,5 +1,5 @@
-import Hero from "@/components/Hero";
+import Contact from "@/components/ui/Contact";
 
 export default function page() {
-  return <Hero />;
+  return <Contact />;
 }
