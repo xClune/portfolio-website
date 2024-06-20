@@ -11,7 +11,7 @@ import { ArrowRightCircleIcon } from "@heroicons/react/24/solid";
 const headingText = "Hey there! I'm Adam.";
 
 const bodyText =
-  "A former civil engineer turned avid life student, world traveller and aspiring software developer. I am passionate about technology and the endless possibilities it brings. I am always looking to learn and grow, collaborate and explore, to capture all the opportunities that this life has to offer.";
+  "A civil and mech engineer turned avid life student, world traveller and aspiring software developer. I am passionate about technology and the endless possibilities it brings. I am always looking to learn and grow, collaborate and explore, to capture all the opportunities that this life has to offer.";
 
 const charVariants = {
   hidden: { opacity: 0 },
