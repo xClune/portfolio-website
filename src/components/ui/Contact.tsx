@@ -2,7 +2,7 @@
 
 import React, { FC } from "react";
 import { useForm } from "react-hook-form";
-// import { sendEmail } from "../../utils/sendEmail";
+import { sendEmail } from "@/lib/utils/sendEmail";
 
 export type FormData = {
   email: string;
@@ -14,7 +14,7 @@ const Contact: FC = () => {
   const { register, handleSubmit, reset } = useForm<FormData>();
 
   function onSubmit(data: FormData) {
-    // sendEmail(data);
+    sendEmail(data);
     reset();
   }
 
