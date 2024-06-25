@@ -1,6 +1,6 @@
 export default function page() {
   return (
-    <div className="flex flex-col h-svh gap-y-10 items-center text-center md:text-left md:items-start justify-start md:justify-center">
+    <div className="flex flex-col h-svh w-full gap-y-10 items-center text-center md:text-left md:items-start justify-start md:justify-center">
       <h2 className="font-bold text-xl self-center mt-10 mb-4">EXPERIENCE</h2>
       <p className="px-5 md:pl-2 md:pr-14">
         I began my career as a civil engineer, working the majority of my first
@@ -20,6 +20,27 @@ export default function page() {
         computer science online studies. Most recently completing the Havard
         CS50x course.
       </p>
+      <div className="px-5">
+        <h2 className="font-bold text-xl self-center mt-10 mb-4">PROJECTS</h2>
+        <div>
+          <p className="font-bold">Smart Cards App</p>
+          <p>
+            A full stack application that allows users to create, edit, and
+            delete smart cards. The frontend of this app was made using React
+            and TailwindCSS. The backend with Django and Django Rest Framework.
+          </p>
+          <iframe
+            className="w-full min-w-200 max-w-800 h-auto min-h-400"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/AahIExB0nE0?si=c50gTdK-h7Wdz_Xg"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
+        </div>
+      </div>
     </div>
   );
 }
