@@ -7,8 +7,8 @@ import ghLogo from "@/lib/img/logos/github.svg";
 const Footer = () => {
   let size = 30;
   return (
-    <div className="absolute bottom-5 right-12 h-10">
-      <ul className="flex flex-row gap-5">
+    <div className="self-center my-5 md:absolute md:bottom-0 md:right-6 md:h-24 md:block">
+      <ul className="flex flex-row gap-5 justify-center md:justify-end pb-5">
         <li>
           <a href="https://www.instagram.com/adam.clune/">
             <Image
@@ -32,15 +32,20 @@ const Footer = () => {
           </a>
         </li>
         <li>
-          <Image
-            src={ghLogo}
-            width={size}
-            height={size}
-            alt="HTML Logo"
-            className="rounded hover:scale-110 transition-all duration-200 ease-in-out"
-          ></Image>
+          <a href="https://github.com/xClune">
+            <Image
+              src={ghLogo}
+              width={size}
+              height={size}
+              alt="HTML Logo"
+              className="rounded hover:scale-110 transition-all duration-200 ease-in-out"
+            ></Image>
+          </a>
         </li>
       </ul>
+      <div className="w-full flex justify-end">
+        <p className="text-sm">Built by Adam Clune using Next.js Framework</p>
+      </div>
     </div>
   );
 };

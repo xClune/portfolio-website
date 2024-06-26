@@ -5,7 +5,7 @@ export default function Logo() {
     <div
       className={`${specialElite.className} flex flex-row items-center text-white justify-center`}
     >
-      <p className="text-[32px]">no . lo . sé</p>
+      <p className="text-[32px]">no . lo . sé .</p>
     </div>
   );
 }

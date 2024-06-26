@@ -1,6 +1,7 @@
+import Footer from "@/components/Footer";
 export default function page() {
   return (
-    <div className="flex flex-col h-svh gap-y-10 items-center text-center md:text-left md:items-start justify-start md:justify-center">
+    <div className="flex flex-col h-svh gap-y-10 items-center text-center px-10 md:text-left md:items-start justify-start">
       <h2 className="font-bold text-xl self-center mt-10 mb-4">
         JOURNEY SO FAR
       </h2>
@@ -13,10 +14,10 @@ export default function page() {
         technical skills in the field.
       </p>
       <p>
-        After these 4 years, I decided that I wanted to learn more and made the
-        decision to pivot my career towards software development. This was done
-        in conjunction with a period of travel, in which I was fortunate enough
-        to find roles in different fields across different countries.
+        After this, I decided that I wanted to learn more and made the decision
+        to pivot my career towards software development. This was done in
+        conjunction with a period of travel, in which I was fortunate enough to
+        find roles in different fields across different countries.
       </p>
       <p>
         This period took me through Europe, South America and Asia before
@@ -32,6 +33,7 @@ export default function page() {
         completing the Havard CS50x course but working on numerous other
         projects and courses to further my knowledge and skills.
       </p>
+      <Footer />
     </div>
   );
 }

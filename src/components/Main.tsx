@@ -7,6 +7,7 @@ import Engineer from "@/../public/static/engineer.png";
 import preMountain from "@/../public/static/premountain.png";
 import postMountain from "@/../public/static/postmountain.png";
 import { ArrowRightCircleIcon } from "@heroicons/react/24/solid";
+import Footer from "@/components/Footer";
 
 const headingText = "Hey there! I'm Adam.";
 
@@ -25,12 +26,12 @@ export default function Main() {
   let imgSize = 220;
 
   return (
-    <div className="w-full h-svh flex-col items-center justify-center">
+    <div className="w-full h-full flex flex-col md:justify-between">
       <motion.p
         initial="hidden"
         whileInView="visible"
         transition={{ staggerChildren: 0.01 }}
-        className={`w-full text-[20px] px-4 text-center md:pl-8 md:pr-16 md:text-right mb-5`}
+        className={`w-full text-[20px] px-4 text-center md:pr-16 md:text-right mb-5`}
       >
         {headingChars.map((char, index) => (
           <motion.span
@@ -46,7 +47,7 @@ export default function Main() {
         initial="hidden"
         whileInView="visible"
         transition={{ staggerChildren: 0.01 }}
-        className={`w-full text-[20px] px-4 text-center md:pl-8 md:pr-16 md:text-right mb-5`}
+        className={`w-full text-[20px] px-4 text-center md:pl-72 md:pr-16 md:text-right mb-5`}
       >
         {bodyChars.map((char, index) => (
           <motion.span
@@ -58,7 +59,7 @@ export default function Main() {
           </motion.span>
         ))}
       </motion.p>
-      <div className="w-full flex flex-row justify-center items-center gap-20 my-10 py-5 pr-5 overflow-x-scroll md:my-20">
+      <div className="flex flex-row items-center gap-20 py-5 pr-5 overflow-x-scroll md:w-full md:justify-center md:my-20">
         <Image
           src={Engineer}
           width={imgSize}
@@ -83,11 +84,7 @@ export default function Main() {
           className="rounded-full"
         ></Image>
       </div>
-      <div className="w-full flex justify-end">
-        <p className="text-sm">
-          Website built by Adam Clune using Next.js Framework
-        </p>
-      </div>
+      <Footer />
     </div>
   );
 }

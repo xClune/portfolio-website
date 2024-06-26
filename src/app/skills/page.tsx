@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Footer from "@/components/Footer";
 import htmllogo from "@/lib/img/logos/html-1.svg";
 import jslogo from "@/lib/img/logos/logo-javascript.svg";
 import csslogo from "@/lib/img/logos/css-3.svg";
@@ -96,6 +97,7 @@ export default function page() {
           Django
         </li>
       </ul>
+      <Footer />
     </div>
   );
 }

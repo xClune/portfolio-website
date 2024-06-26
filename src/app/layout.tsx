@@ -19,13 +19,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} flex flex-col pt-4 md:pt-0 md:flex-row w-screen h-screen static`}
+        className={`${inter.className} flex flex-col pt-4 md:pt-0 md:flex-row w-screen h-[calc(100%-96px)] md:h-screen static`}
       >
         <SideNav />
-        <div className="flex flex-col w-full h-full items-center">
+        <div className="flex flex-col w-full h-[calc(100%-96px)] items-center ">
           {children}
         </div>
-        <Footer />
       </body>
     </html>
   );
