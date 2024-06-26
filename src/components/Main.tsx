@@ -14,6 +14,9 @@ const headingText = "Hey there! I'm Adam.";
 const bodyText =
   "A civil and mech engineer turned avid life student, world traveller and aspiring software developer. I am passionate about technology and the endless possibilities it brings. I am always looking to learn and grow, collaborate and explore, to capture all the opportunities that this life has to offer.";
 
+const bodyText2 =
+  "This website was built as a hub to showcase myself as well as my progress in software development. As such it is a work in progress, and I am always looking to improve and expand it. If you have any questions or would like to get in touch, feel free to reach out to me on LinkedIn or Instagram. I look forward to hearing from you!";
+
 const charVariants = {
   hidden: { opacity: 0 },
   visible: { opacity: 1 },
@@ -22,8 +25,25 @@ const charVariants = {
 export default function Main() {
   const headingChars = splitStringRegex(headingText);
   const bodyChars = splitStringRegex(bodyText);
+  const bodyChars2 = splitStringRegex(bodyText2);
 
   let imgSize = 220;
+
+  // (function () {
+  //   var i,
+  //     e,
+  //     d = document,
+  //     s = "script";
+  //   i = d.createElement("script");
+  //   i.async = true;
+  //   i.charset = "UTF-8";
+  //   i.src =
+  //     "https://cdn.curator.io/published/c7b0a6cb-b28e-4cb7-a160-7f186ccf5702.js";
+  //   e = d.getElementsByTagName(s)[0];
+  //   if (e.parentNode) {
+  //     e.parentNode.insertBefore(i, e);
+  //   }
+  // })();
 
   return (
     <div className="w-full h-full flex flex-col md:justify-between">
@@ -47,7 +67,7 @@ export default function Main() {
         initial="hidden"
         whileInView="visible"
         transition={{ staggerChildren: 0.01 }}
-        className={`w-full text-[20px] px-4 text-center md:pl-72 md:pr-16 md:text-right mb-5`}
+        className={`w-full text-[16px] px-4 text-center md:pl-96 md:pr-16 md:text-right mb-5`}
       >
         {bodyChars.map((char, index) => (
           <motion.span
@@ -59,29 +79,44 @@ export default function Main() {
           </motion.span>
         ))}
       </motion.p>
-      <div className="flex flex-row items-center gap-20 py-5 pr-5 overflow-x-scroll md:w-full md:justify-center md:my-20">
+      <motion.p
+        initial="hidden"
+        whileInView="visible"
+        transition={{ staggerChildren: 0.01 }}
+        className={`w-full text-[16px] px-4 text-center md:pl-96 md:pr-16 md:text-right mb-5`}
+      >
+        {bodyChars2.map((char, index) => (
+          <motion.span
+            key={index}
+            transition={{ duration: 0.2 }}
+            variants={charVariants}
+          >
+            {char}
+          </motion.span>
+        ))}
+      </motion.p>
+
+      <div className="flex flex-row items-center gap-20 py-5 px-24 md:px-14 overflow-x-scroll md:w-full md:justify-end md:my-16">
         <Image
           src={Engineer}
           width={imgSize}
           height={imgSize}
           alt="Civil Engineer Image"
-          className="rounded-full"
+          className="rounded-3xl"
         ></Image>
-        <ArrowRightCircleIcon className="w-10 h-10 fill-white"></ArrowRightCircleIcon>
         <Image
           src={preMountain}
           width={imgSize}
           height={imgSize}
           alt="Hiking Image"
-          className="rounded-full"
+          className="rounded-3xl"
         ></Image>
-        <ArrowRightCircleIcon className="w-10 h-10 fill-white"></ArrowRightCircleIcon>
         <Image
           src={postMountain}
           width={imgSize}
           height={imgSize}
           alt="Mountain Image"
-          className="rounded-full"
+          className="rounded-3xl"
         ></Image>
       </div>
       <Footer />

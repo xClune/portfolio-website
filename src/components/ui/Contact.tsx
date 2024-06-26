@@ -20,11 +20,11 @@ const Contact: FC = () => {
 
   return (
     <section className="bg-white dark:bg-black w-full p-5 md:p-0 ">
-      <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-        <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
-          Contact
+      <div className="py-4 lg:py-16 px-4 mx-auto max-w-screen-md">
+        <h2 className="mb-4 text-2xl tracking-tight font-bold text-center text-gray-900 dark:text-white">
+          CONTACT
         </h2>
-        <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
+        <p className="mb-4 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
           Get in touch below!
         </p>
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-8">

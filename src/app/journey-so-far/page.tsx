@@ -1,4 +1,7 @@
+"use client";
+
 import Footer from "@/components/Footer";
+
 export default function page() {
   return (
     <div className="flex flex-col h-svh gap-y-10 items-center text-center px-10 md:text-left md:items-start justify-start">
