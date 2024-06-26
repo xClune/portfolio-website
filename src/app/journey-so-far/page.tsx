@@ -1,8 +1,30 @@
 "use client";
 
 import Footer from "@/components/Footer";
+import Image from "next/image";
+import Engineer from "@/../public/static/engineer.png";
+import preMountain from "@/../public/static/premountain.png";
+import postMountain from "@/../public/static/postmountain.png";
+import brazil from "@/../public/static/Brazil.png";
+import taiwan from "@/../public/static/Taiwan.png";
+import iceland from "@/../public/static/Iceland.png";
+import spain from "@/../public/static/Spain.png";
+import saltFlats from "@/../public/static/SaltFlats.png";
 
 export default function page() {
+  let images = [
+    Engineer,
+    preMountain,
+    postMountain,
+    brazil,
+    taiwan,
+    iceland,
+    spain,
+    saltFlats,
+  ];
+
+  let imgSize = 220;
+
   return (
     <div className="flex flex-col h-svh gap-y-10 items-center text-center px-10 md:text-left md:items-start justify-start">
       <h2 className="font-bold text-xl self-center mt-10 mb-4">
@@ -36,6 +58,18 @@ export default function page() {
         completing the Havard CS50x course but working on numerous other
         projects and courses to further my knowledge and skills.
       </p>
+      <div className="flex flex-row items-center gap-20 py-5 px-24 md:px-14 overflow-x-scroll md:my-16">
+        {images.map((image, index) => (
+          <Image
+            key={index}
+            src={image}
+            width={imgSize}
+            height={imgSize}
+            alt={`Image ${image}`}
+            className="rounded-3xl"
+          ></Image>
+        ))}
+      </div>
       <Footer />
     </div>
   );

@@ -114,6 +114,7 @@ export default function Main() {
       <div className="flex flex-row items-center gap-20 py-5 px-24 md:px-14 overflow-x-scroll md:my-16">
         {images.map((image, index) => (
           <Image
+            key={index}
             src={image}
             width={imgSize}
             height={imgSize}
