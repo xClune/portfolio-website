@@ -6,7 +6,11 @@ import Image from "next/image";
 import Engineer from "@/../public/static/engineer.png";
 import preMountain from "@/../public/static/premountain.png";
 import postMountain from "@/../public/static/postmountain.png";
-import { ArrowRightCircleIcon } from "@heroicons/react/24/solid";
+import brazil from "@/../public/static/Brazil.png";
+import taiwan from "@/../public/static/Taiwan.png";
+import iceland from "@/../public/static/Iceland.png";
+import spain from "@/../public/static/Spain.png";
+import saltFlats from "@/../public/static/SaltFlats.png";
 import Footer from "@/components/Footer";
 
 const headingText = "Hey there! I'm Adam.";
@@ -28,6 +32,17 @@ export default function Main() {
   const bodyChars2 = splitStringRegex(bodyText2);
 
   let imgSize = 220;
+
+  let images = [
+    Engineer,
+    preMountain,
+    postMountain,
+    brazil,
+    taiwan,
+    iceland,
+    spain,
+    saltFlats,
+  ];
 
   // (function () {
   //   var i,
@@ -96,28 +111,16 @@ export default function Main() {
         ))}
       </motion.p>
 
-      <div className="flex flex-row items-center gap-20 py-5 px-24 md:px-14 overflow-x-scroll md:w-full md:justify-end md:my-16">
-        <Image
-          src={Engineer}
-          width={imgSize}
-          height={imgSize}
-          alt="Civil Engineer Image"
-          className="rounded-3xl"
-        ></Image>
-        <Image
-          src={preMountain}
-          width={imgSize}
-          height={imgSize}
-          alt="Hiking Image"
-          className="rounded-3xl"
-        ></Image>
-        <Image
-          src={postMountain}
-          width={imgSize}
-          height={imgSize}
-          alt="Mountain Image"
-          className="rounded-3xl"
-        ></Image>
+      <div className="flex flex-row items-center gap-20 py-5 px-24 md:px-14 overflow-x-scroll md:my-16">
+        {images.map((image, index) => (
+          <Image
+            src={image}
+            width={imgSize}
+            height={imgSize}
+            alt={`Image ${image}`}
+            className="rounded-3xl"
+          ></Image>
+        ))}
       </div>
       <Footer />
     </div>
