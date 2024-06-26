@@ -19,14 +19,14 @@ export default function page() {
     brazil,
     taiwan,
     iceland,
-    spain,
     saltFlats,
+    spain,
   ];
 
   let imgSize = 220;
 
   return (
-    <div className="flex flex-col h-svh gap-y-10 items-center text-center px-10 md:text-left md:items-start justify-start">
+    <div className="flex flex-col h-full w-full gap-y-10 items-center text-center px-10 md:text-left md:items-start justify-start">
       <h2 className="font-bold text-xl self-center mt-10 mb-4">
         JOURNEY SO FAR
       </h2>
@@ -51,14 +51,7 @@ export default function page() {
         more. This period was a great opportunity to learn about different
         cultures and ways of life, and to learn about myself.
       </p>
-      <p>
-        With my time traveling coming to an end (for now), and my desire to move
-        near my home and family on the Sunshine Coast I have pushed forward with
-        web development and computer science online studies. Most recently
-        completing the Havard CS50x course but working on numerous other
-        projects and courses to further my knowledge and skills.
-      </p>
-      <div className="flex flex-row items-center gap-20 py-5 px-24 md:px-14 overflow-x-scroll md:my-16">
+      <div className="flex flex-row w-full items-center gap-20 py-5 px-24 md:px-14 overflow-x-scroll md:my-16">
         {images.map((image, index) => (
           <Image
             key={index}
@@ -70,6 +63,13 @@ export default function page() {
           ></Image>
         ))}
       </div>
+      <p>
+        With my time traveling coming to an end (for now), and my desire to move
+        near my home and family on the Sunshine Coast I have pushed forward with
+        web development and computer science online studies. Most recently
+        completing the Havard CS50x course but working on numerous other
+        projects and courses to further my knowledge and skills.
+      </p>
       <Footer />
     </div>
   );
