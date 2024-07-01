@@ -16,10 +16,10 @@ export default function page() {
     Engineer,
     preMountain,
     postMountain,
+    saltFlats,
     brazil,
     taiwan,
     iceland,
-    saltFlats,
     spain,
   ];
 
@@ -51,7 +51,7 @@ export default function page() {
         more. This period was a great opportunity to learn about different
         cultures and ways of life, and to learn about myself.
       </p>
-      <div className="flex flex-row w-full items-center gap-20 py-5 px-24 md:px-14 overflow-x-scroll md:my-16">
+      <div className="flex flex-row w-full md:min-h-56 items-center gap-20 py-5 px-24 md:px-14 overflow-x-scroll">
         {images.map((image, index) => (
           <Image
             key={index}
@@ -59,7 +59,7 @@ export default function page() {
             width={imgSize}
             height={imgSize}
             alt={`Image ${image}`}
-            className="rounded-3xl"
+            className="rounded-3xl md:min-h-56"
           ></Image>
         ))}
       </div>
