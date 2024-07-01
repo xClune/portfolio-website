@@ -67,8 +67,8 @@ export default function page() {
         With my time traveling coming to an end (for now), and my desire to move
         near my home and family on the Sunshine Coast I have pushed forward with
         web development and computer science online studies. Most recently
-        completing the Havard CS50x course but working on numerous other
-        projects and courses to further my knowledge and skills.
+        completing the Harvard CS50x course while working on numerous other
+        projects to further my skills.
       </p>
       <Footer />
     </div>

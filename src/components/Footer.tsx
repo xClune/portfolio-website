@@ -7,8 +7,8 @@ import ghLogo from "@/lib/img/logos/github.svg";
 const Footer = () => {
   let size = 30;
   return (
-    <div className="self-end my-5">
-      <ul className="flex flex-row gap-5 justify-center md:justify-end pb-5">
+    <div className="self-center my-5">
+      <ul className="flex flex-row gap-5 justify-center md:justify-center pb-5">
         <li>
           <a href="https://www.instagram.com/adam.clune/">
             <Image

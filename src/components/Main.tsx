@@ -10,7 +10,6 @@ import brazil from "@/../public/static/Brazil.png";
 import taiwan from "@/../public/static/Taiwan.png";
 import iceland from "@/../public/static/Iceland.png";
 import spain from "@/../public/static/Spain.png";
-import saltFlats from "@/../public/static/SaltFlats.png";
 import Footer from "@/components/Footer";
 
 const headingText = "Hey there! I'm Adam.";
@@ -41,7 +40,6 @@ export default function Main() {
     taiwan,
     iceland,
     spain,
-    saltFlats,
   ];
 
   // (function () {
@@ -111,7 +109,7 @@ export default function Main() {
         ))}
       </motion.p>
 
-      <div className="flex flex-row items-center gap-20 py-5 px-24 md:px-14 overflow-x-scroll md:my-16">
+      <div className="flex flex-row items-center gap-20 py-5 px-24 md:px-14 overflow-x-scroll md:my-16 min-h-56">
         {images.map((image, index) => (
           <Image
             key={index}
