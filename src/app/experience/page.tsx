@@ -2,7 +2,7 @@ import Footer from "@/components/Footer";
 
 export default function page() {
   return (
-    <div className="flex flex-col h-full w-full gap-y-10 items-center text-center md:text-left md:items-start justify-start md:justify-center md:px-10">
+    <div className="flex flex-col h-full w-full gap-y-10 items-center text-center md:text-left md:items-start justify-start md:px-10">
       <h2 className="font-bold text-xl self-center mt-10 mb-4">EXPERIENCE</h2>
       <p className="px-5 md:pl-2 md:pr-14">
         I began my career as a civil engineer, working the majority of my first
@@ -24,8 +24,8 @@ export default function page() {
       </p>
       <div className="px-5 w-full flex flex-col">
         <h2 className="font-bold text-xl self-center mt-10 mb-4">PROJECTS</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10 md:gap-5">
-          <div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-5">
+          <div className="flex flex-col overflow-hidden items-center">
             <p className="font-bold text-gray-400">Smart Cards App</p>
             <p>
               A full stack application that allows users to create, edit, and
@@ -35,7 +35,7 @@ export default function page() {
             </p>
             <iframe
               className="min-w-200 max-w-800 h-auto min-h-400"
-              width="500"
+              width="250"
               height="315"
               src="https://www.youtube.com/embed/AahIExB0nE0?si=c50gTdK-h7Wdz_Xg"
               title="YouTube video player"
@@ -52,7 +52,7 @@ export default function page() {
             </p>
             <iframe
               className="min-w-200 max-w-800 h-auto min-h-400"
-              width="500"
+              width="250"
               height="315"
               src=""
               title="YouTube video player"

@@ -42,22 +42,6 @@ export default function Main() {
     spain,
   ];
 
-  // (function () {
-  //   var i,
-  //     e,
-  //     d = document,
-  //     s = "script";
-  //   i = d.createElement("script");
-  //   i.async = true;
-  //   i.charset = "UTF-8";
-  //   i.src =
-  //     "https://cdn.curator.io/published/c7b0a6cb-b28e-4cb7-a160-7f186ccf5702.js";
-  //   e = d.getElementsByTagName(s)[0];
-  //   if (e.parentNode) {
-  //     e.parentNode.insertBefore(i, e);
-  //   }
-  // })();
-
   return (
     <div className="w-full h-full flex flex-col md:justify-between">
       <motion.p
@@ -80,7 +64,7 @@ export default function Main() {
         initial="hidden"
         whileInView="visible"
         transition={{ staggerChildren: 0.01 }}
-        className={`w-full text-[16px] px-4 text-center md:pl-96 md:pr-16 md:text-right mb-5`}
+        className={`w-full text-[16px] px-4 text-center xl:pl-96 md:pr-16 md:text-right mb-5`}
       >
         {bodyChars.map((char, index) => (
           <motion.span
@@ -96,7 +80,7 @@ export default function Main() {
         initial="hidden"
         whileInView="visible"
         transition={{ staggerChildren: 0.01 }}
-        className={`w-full text-[16px] px-4 text-center md:pl-96 md:pr-16 md:text-right mb-5`}
+        className={`w-full text-[16px] px-4 text-center xl:pl-96 md:pr-16 md:text-right mb-5`}
       >
         {bodyChars2.map((char, index) => (
           <motion.span
@@ -108,8 +92,8 @@ export default function Main() {
           </motion.span>
         ))}
       </motion.p>
-
-      <div className="flex flex-row items-center gap-20 py-5 px-24 md:px-14 overflow-x-scroll md:my-16 min-h-56">
+      {/* Image gallery */}
+      <div className="flex flex-row items-center gap-20 py-5 px-24 md:px-14 overflow-x-scroll md:my-16 min-h-56 scrollbar-hide">
         {images.map((image, index) => (
           <Image
             key={index}

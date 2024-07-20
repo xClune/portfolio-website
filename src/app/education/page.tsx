@@ -7,7 +7,7 @@ import harLogo from "@/lib/img/logos/harvard-university.svg";
 export default function page() {
   let size = 100;
   return (
-    <div className="flex flex-col h-full gap-y-10 items-center text-center md:text-left md:items-start justify-start">
+    <div className="flex flex-col h-full gap-y-10 items-center text-center md:text-left md:items-start justify-start md:px-20">
       <h2 className="font-bold text-xl self-center mt-10 mb-4">EDUCATION</h2>
       <div className="flex flex-col items-center md:items-start md:flex-row w-full gap-5">
         <Image

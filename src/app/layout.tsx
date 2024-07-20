@@ -19,10 +19,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} flex flex-col pt-4 md:pt-0 md:flex-row w-screen h-[calc(100%-96px)] md:h-screen static`}
+        className={`${inter.className} flex flex-col pt-4 md:pt-0 md:flex-row w-screen h-[calc(100%-96px)] md:h-screen static overflow-x-hidden scrollbar-hide md:justify-end`}
       >
         <SideNav />
-        <div className="flex flex-col w-full h-[calc(100%-96px)] items-center ">
+        <div className="flex flex-col w-full md:w-[calc(75%)] h-[calc(100%-96px)] items-right">
           {children}
         </div>
       </body>

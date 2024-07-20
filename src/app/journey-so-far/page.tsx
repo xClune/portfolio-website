@@ -51,7 +51,7 @@ export default function page() {
         more. This period was a great opportunity to learn about different
         cultures and ways of life, and to learn about myself.
       </p>
-      <div className="flex flex-row w-full md:min-h-56 items-center gap-20 py-5 px-24 md:px-14 overflow-x-scroll">
+      <div className="flex flex-row w-full md:min-h-56 items-center gap-20 py-5 px-24 md:px-14 overflow-x-scroll scrollbar-hide">
         {images.map((image, index) => (
           <Image
             key={index}
