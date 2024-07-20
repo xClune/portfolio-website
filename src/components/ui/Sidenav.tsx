@@ -5,7 +5,7 @@ import Logo from "../Logo";
 
 export default function SideNav() {
   return (
-    <div className="flex h-full flex-col mx-2 px-2 md:px-5 md:py-5 md:fixed md:top-0 md:left-0 md:w-1/4">
+    <div className="flex h-full flex-col mx-2 px-2 md:px-5 md:py-5 md:fixed md:top-0 md:left-0 md:w-1/6">
       <Link
         className="flex h-20 items-center justify-start rounded-md bg-slate-600 p-4 mb-5 md:h-40"
         href="/"
